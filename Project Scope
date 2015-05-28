@@ -1,0 +1,267 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 14 (filtered)">
+<title>Activity 1: Creating a Simple Data Mart</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Utopia;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-link:"Body Text Char";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+p.Pa27, li.Pa27, div.Pa27
+	{mso-style-name:Pa27;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:12.0pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";}
+p.Pa30, li.Pa30, div.Pa30
+	{mso-style-name:Pa30;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Cambria","serif";
+	font-weight:bold;}
+p.BodyTextFirst, li.BodyTextFirst, div.BodyTextFirst
+	{mso-style-name:"Body Text First";
+	mso-style-link:"Body Text First Char";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	font-size:9.0pt;
+	font-family:"Utopia","serif";}
+span.BodyTextFirstChar
+	{mso-style-name:"Body Text First Char";
+	mso-style-link:"Body Text First";
+	font-family:"Utopia","serif";}
+span.BodyTextChar
+	{mso-style-name:"Body Text Char";
+	mso-style-link:"Body Text";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink=purple>
+
+<div class=WordSection1>
+
+<div style='border:none;border-bottom:solid windowtext 1.0pt;padding:0in 0in 1.0pt 0in'>
+
+<p class=MsoNormal align=center style='text-align:center;border:none;
+padding:0in'><b><span style='font-size:16.0pt;color:#C00000'>BI Certificate Final</span></b></p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>In this final you will create an entire Business
+Intelligence solution. <i><u>This activity will take you about 15 to 20 hours,
+so plan accordingly!</u></i> </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>The activity consists of the follow steps:</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal>Review the chapters from your textbook.</li>
+ <li class=MsoNormal>Create the OLTP Database with Instructors Script</li>
+ <li class=MsoNormal>Design a Data Warehouse</li>
+ <li class=MsoNormal>Start the Solution Developer Document in Excel</li>
+ <li class=MsoNormal>Create a Data Warehouse script</li>
+ <li class=MsoNormal>Create an ETL script</li>
+ <li class=MsoNormal>Create an SSIS ETL project and package</li>
+ <li class=MsoNormal>Create an SSAS project with Dimensions and a Cube</li>
+ <li class=MsoNormal>Create an SSRS project with both a Cube and a DW report</li>
+ <li class=MsoNormal>Create an Excel workbook with both a Cube and a DW report</li>
+ <li class=MsoNormal>Update the Solution Developer Document in Excel</li>
+</ol>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Review the
+chapters from your textbook </span></b></p>
+
+<p class=MsoNormal>You will be creating a new BI solution using a new database
+provided by your instructor! This means that you may have to review many of the
+chapters in the book as needed. It is recommend that you start with reviewing
+chapter 2 since it outlines all the steps involved with creating a BI solution
+in a single chapter.</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Create the
+OLTP Database with Instructors Script</span></b></p>
+
+<p class=MsoNormal>You need to create a new database with the script file
+provide by your instructor called, Create the UWFinalDB database.sql. Review
+the code within and execute it to create the new database.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Design a
+Data Warehouse</span></b></p>
+
+<p class=MsoNormal>You need design a new data warehouse database based on the
+new FinalDB database. Use the same techniques you learned in class.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Start the
+Solution Developer Document in Excel</span></b></p>
+
+<p class=MsoNormal>You need to create an Excel that documents you development
+of the BI solution. You can use the Excel spreadsheet included as a template. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Create a
+Data Warehouse script</span></b></p>
+
+<p class=MsoNormal>You need to create a Data Warehouse script for your
+solution. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Create an
+ETL script</span></b></p>
+
+<p class=MsoNormal>You need to create an ETL SQL script for your solution. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Create an
+SSIS ETL project and package</span></b></p>
+
+<p class=MsoNormal>You need to create an SSIS ETL project and package for your
+solution. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Create an
+SSAS project with Dimensions and a Cube</span></b></p>
+
+<p class=MsoNormal>You need to create an SSAS project with dimensions and a
+cube for your solution. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Create an
+SSRS project with both a Cube and a DW report</span></b></p>
+
+<p class=MsoNormal>You need to create an SSRS reporting project with one DW
+report and one Cube report for your solution.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Create an
+Excel workbook with both a Cube and a DW report</span></b></p>
+
+<p class=MsoNormal>You need to create an Excel workbook with one DW report and
+one Cube report for your solution. </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><b><span style='font-size:14.0pt;color:#C00000'>Update the
+Solution Developer Document in Excel</span></b></p>
+
+<p class=MsoNormal>At that point you need to update your Excel development
+document to accurately record the objects in your BI solution.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
